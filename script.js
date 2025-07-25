@@ -59,7 +59,7 @@ document.getElementById("aiNameBtn").addEventListener("click", async () => {
   if (!keyword) return alert("Введите ключевое слово");
 
   try {
-    const response = await fetch("http://localhost:3000/generate-name", {
+    const response = await fetch("https://logo-generator-api.onrender.com/generate-name", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
